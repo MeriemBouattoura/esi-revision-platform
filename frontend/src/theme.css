@@ -1,0 +1,76 @@
+:root {
+  --color-brand: #3978e8;
+  --color-ink: #17243a;
+  --color-muted: #718096;
+  --color-canvas: #f7f9fc;
+  --color-surface: #ffffff;
+  --color-border: #e9edf4;
+}
+
+.brand-mark,
+.primary-button {
+  background-color: var(--color-brand);
+}
+
+.workspace {
+  background-color: var(--color-canvas);
+}
+
+.sidebar,
+.topbar,
+.content-card,
+.stat-card {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-chip {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.user-menu-popover {
+  position: absolute;
+  z-index: 25;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 190px;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  box-shadow: 0 12px 30px #243a5a18;
+}
+
+.user-menu-email {
+  overflow: hidden;
+  padding: 8px;
+  color: var(--color-muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+}
+
+.user-menu-popover button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+}
+
+.user-menu-popover button:hover {
+  background: var(--color-canvas);
+}
